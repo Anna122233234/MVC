@@ -1,0 +1,21 @@
+﻿@model MVC_app.Models.UserModel
+
+<div class="text-center">
+	<h1> @Model.login</h1>
+	@if (@Model.verif)
+	{
+		@if (@Model.admin)
+		{
+			<p>You are Admin</p>
+		}
+		else
+		{
+			<p>You are User</p>
+		}
+	}
+	else
+	{
+		<p>ERROR Invalid password</p>
+		<a href="@Url.Action("Index")"><span>Tap here</span></a>
+	}
+</div>
