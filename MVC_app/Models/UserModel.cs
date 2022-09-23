@@ -2,9 +2,9 @@
 {
     public class UserModel
     {
-        public string login { get; set; }
-        public string password { get; set; }
-        public bool admin { get; set; }
-        public bool verif { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public bool Admin { get; set; }
+        public bool Verif { get; set; }
     }
 }

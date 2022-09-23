@@ -15,21 +15,16 @@ namespace MVC_app.Controllers
         }
         public IActionResult Check(UserModel user)
         {
-            try
-            {
-                user.login = this.Request.Form["login"];
-                user.password = this.Request.Form["password"];
-            }
-            catch
+            if (user.Login == null || user.Password == null)
             {
                 return RedirectToAction("Index");
             }
             foreach (var record in GetUser())
             {
-                if (user.login == record.login && user.password == record.password)
+                if (user.Login == record.Login && user.Password == record.Password)
                 {
-                    user.verif = true;
-                    user.admin = record.admin;
+                    user.Verif = true;
+                    user.Admin = record.Admin;
                     return View("Checking", user);
                 }
             }
@@ -39,12 +34,12 @@ namespace MVC_app.Controllers
         {
             List<UserModel> users = new List<UserModel>
             {
-                new UserModel { login = "Anna", password = "1337", admin = false },
-                new UserModel { login = "Ann" , password = "228", admin = true },
-                new UserModel { login = "Ann1", password = "5678", admin = false },
-                new UserModel { login = "Ann2", password = "4578", admin = false },
-                new UserModel { login = "Ann3", password = "1245", admin = true },
-                new UserModel { login = "Ann4", password = "7859", admin = true }
+                new UserModel { Login = "Anna", Password = "1337", Admin = false },
+                new UserModel { Login = "Ann" , Password = "228", Admin = true },
+                new UserModel { Login = "Ann1", Password = "5678", Admin = false },
+                new UserModel { Login = "Ann2", Password = "4578", Admin = false },
+                new UserModel { Login = "Ann3", Password = "1245", Admin = true },
+                new UserModel { Login = "Ann4", Password = "7859", Admin = true }
             };
             return users;
         }

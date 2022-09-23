@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "62jEZOLeHbfbOf1ZILlNZ71glU5FDCdVmOfp9HMh6+eO/nsYf2DTKkAtSRQ7X/OVG2vphNcb88K2RIHtC3EcXw==",
+  "dgSpecHash": "PkTFI7q3t422BZWhcnFJaYMaqIazIa4Z4/EEzgLTjBYNRLzqdQVIZLCnAEJP0qJJldfY2obPmmnSw3iqDQXi7A==",
   "success": true,
-  "projectFilePath": "D:\\Mentors\\NG_2022_1_Mentors\\MVC_app\\MVC_app.csproj",
+  "projectFilePath": "D:\\MVC\\MVC\\MVC_app\\MVC_app.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
